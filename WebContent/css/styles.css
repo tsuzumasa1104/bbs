@@ -1,0 +1,276 @@
+@charset "UTF-8";
+
+/*共通部分*/
+.body{
+	 margin: 0 auto 0 auto;
+}
+
+.header {
+position: fixed; /* ヘッダーを固定する */
+top: 0; /* 上部から配置の基準位置を決める */
+left: 0; /* 左から配置の基準位置を決める */
+width: 100%; /* ヘッダーの横幅を指定する */
+height: 100px; /* ヘッダーの高さを指定する */
+padding: 10px; /* ヘッダーの余白を指定する(上下左右) */
+background-color: #D9E5FF; /* ヘッダーの背景色を指定する */
+color: #000000; /* フォントの色を指定する */
+display: flex;
+align-items: center; /* 縦方向中央揃え */
+justify-content: center; /* 横方向中央揃え */
+font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+font-size: 40px;
+}
+
+.footer{
+	position: fixed; /* フッターーを固定する */
+	bottom: 0; /* 上部から配置の基準位置を決める */
+	left: 0; /* 左から配置の基準位置を決める */
+	width: 100%; /* フッターの横幅を指定する */
+	height: 100px; /* フッターの高さを指定する */
+	padding: 10px; /* フッターの余白を指定する(上下左右) */
+	background-color: #D9E5FF; /* フッターの背景色を指定する */
+	color: #000000; /* フォントの色を指定する */
+	display: flex;
+	font-size:20px;
+}
+
+
+/*トップページ---------------------------------------*/
+.search {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+
+}
+
+.search input[type=text] {
+	border: 1px solid #333;
+	color: #333;
+	text-align: left;
+	font-size: 20px;
+	padding: 10px;
+	height: 28px;
+	width: 300px;
+	border-radius: 20px;
+}
+/*検索ボタン*/
+button.button6 {
+	font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 30px;
+    /* 背景色を濃い青色に指定 */
+    background-color: #4da6ff;
+    /* 文字色を白色に指定 */
+    color: #fff;
+    border-style: none;
+    width: 100px;
+    border-width: 10px;
+}
+
+.main_content {
+	margin-top: 150px;
+}
+
+.content {
+	border-bottom: 1px solid #000;
+	margin-top: 20px;
+}
+
+.footer_right a {
+	position: absolute;
+	bottom: 40px;
+	right: 60px;
+	border: 1px dotted #000;
+	padding: 7px 30px;
+}
+
+
+/*---ログインページ------------------------------------*/
+/*ログインId・Passテキストボックス*/
+.msr_text_02 {
+  padding-bottom: 20px;
+  width: 460px;
+}
+.msr_text_02  label {
+  display: block;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.msr_text_02 input[type=text] {
+  border: 1px solid #1B73BA;
+  color: #333;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  height: 28px;
+  width: 460px;
+}
+
+.msr_text_02 input[type=password] {
+  border: 1px solid #1B73BA;
+  color: #333;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  height: 28px;
+  width: 460px;
+}
+
+/*ログインボタン*/
+button.button4 {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px 30px;
+    /* 背景色を濃い青色に指定 */
+    background-color: #4da6ff;
+    /* 文字色を白色に指定 */
+    color: #fff;
+    border-style: none;
+    width: 483px;
+    border-width: 10px;
+}
+
+button.button4:hover {
+    /* 背景色を明るい青色に指定 */
+     background-color: #24d ;
+    /* 文字色を白色に指定 */
+     color: #fff;
+}
+
+.login{
+	 width:500px;
+	 padding: 10px;
+	 margin : 100px auto;
+}
+
+
+/*--ログインエラーページ------------------------------------------*/
+.LoginError{
+padding: 105px; /* ヘッダーの余白を指定する(上下左右) */
+ margin: 100px auto auto 35px;
+}
+
+.p_text{
+	font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+	padding : 1.2em;
+	text-align:center;
+	justify-content: center;
+	font-size:25px;
+	font-weight: bold;
+}
+
+.msr_btn15 a{
+  width: 230px;
+  padding:15px;
+  margin: 150px 500px;
+  color:#ffffff;
+  font-size: 15px;
+  line-height: 120%;
+  text-align: center;
+  text-decoration: none;
+  border-radius:8px;
+  background: #FF9C15;
+  display: block;
+  position:relative;
+  transition: 0.3s ease-out;
+}
+
+.msr_btn15 a::before{
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin:-8px 0 0 0;
+  border-radius:50%;
+  background: #fff;
+  position:relative;
+  position:absolute;
+  top:50%;
+  left:20px;
+  display:block;
+}
+
+.msr_btn15 a::after{
+  content: '';
+  width: 4px;
+  height: 4px;
+  border: 0px;
+  margin:-3px 0 0 0;
+  border-top: solid 2px #FF9C15;
+  border-right: solid 2px #FF9C15;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position:absolute;
+  top:50%;
+  left:24px;
+  display:block;
+  transition: 0.3s ease-out;
+}
+
+.msr_btn15 a:hover{
+  background: #FFAF42;
+}
+
+.msr_btn15 a:hover::after{
+  border-top: solid 2px #FFAF42;
+  border-right: solid 2px #FFAF42;
+}
+
+
+/*--投稿・投稿編集ページ--------------------------------------------------*/
+.text_2 {
+	margin: 0 auto;
+	margin: 150px 300px
+}
+
+textarea {
+  border: 1px solid #000;
+  color: #333;
+  /* text-align: center; */
+  font-size: 20px;
+  padding: 10px;
+  height: 300px;
+  width: 800px;
+  margin-top: 50px;
+}
+
+/*--投稿削除ページ--------------------------------------------------*/
+.Delete_Comments {
+  margin:150px auto 5px;
+  text-align: center;
+}
+
+/*削除確定ボタン*/
+button.button1 {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-left: 600px;
+    /* 背景色を濃い青色に指定 */
+    background-color: #4da6ff;
+    /* 文字色を白色に指定 */
+    color: #fff;
+    border-style: none;
+    width: 150px;
+    border-width: 10px;
+}
+
+button.button1:hover {
+    /* 背景色を明るい青色に指定 */
+    background-color: #24d;
+    /* 文字色を白色に指定 */
+    color: #fff;
+}
+
+/*--投稿・投稿更新ボタン設定------------------------------------------*/
+button.button2 {
+    /* 文字サイズを1.4emに指定 */
+    font-size: 1.4em;
+    /* 文字の太さをboldに指定 */
+    font-weight: bold;
+    /* 縦方向に10px、
+     * 横方向に30pxの余白を指定 */
+    padding: 10px 50px;
+    background-color: #006400;
+}
